@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crazy Arcade — Gaming Lounge</title>
+<meta name="description" content="Crazy Arcade is a retro gaming lounge with classic cabinets, weekly high score battles, and monthly tournaments.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scanlines" aria-hidden="true"></div>
+
+<header class="site-header">
+  <a href="#top" class="logo">
+    <span class="logo-mark">CA</span>
+    <span class="logo-word">CRAZY ARCADE</span>
+  </a>
+  <nav class="site-nav">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="nav-links">
+      <li><a href="#games">Cabinets</a></li>
+      <li><a href="#scores">High Scores</a></li>
+      <li><a href="#tournaments">Tournaments</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-kicker">Open Tue–Sun · Free play after 9pm</p>
+      <h1 class="hero-title">
+        <span class="flicker">CRAZY</span>
+        <span class="flicker-slow">ARCADE</span>
+      </h1>
+      <p class="hero-sub">Forty-two restored cabinets. A scoreboard that never forgets. A tournament every month worth showing up for.</p>
+      <div class="hero-actions">
+        <a href="#tournaments" class="btn btn-solid">See what's coming up</a>
+        <a href="#scores" class="btn btn-line">Check the leaderboard</a>
+      </div>
+    </div>
+    <div class="hero-marquee" aria-hidden="true">
+      <div class="bulb-row"></div>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <section class="stats-strip">
+    <div class="stat"><span class="stat-num">42</span><span class="stat-label">cabinets on the floor</span></div>
+    <div class="stat"><span class="stat-num">18</span><span class="stat-label">years running</span></div>
+    <div class="stat"><span class="stat-num">1</span><span class="stat-label">tournament every month</span></div>
+    <div class="stat"><span class="stat-num">∞</span><span class="stat-label">quarters, if you're good</span></div>
+  </section>
+
+  <!-- GAMES -->
+  <section id="games" class="section">
+    <div class="section-head">
+      <h2>The cabinets</h2>
+      <p>Everything on the floor is coin-op original or a faithful restoration. No emulators pretending to be cabinets.</p>
+    </div>
+
+    <div class="cab-grid">
+
+      <article class="cab-card">
+        <div class="cab-number">01</div>
+        <h3>Galaxy Raiders</h3>
+        <p class="cab-tag">Vertical Shooter · 1982</p>
+        <p class="cab-copy">The cabinet that started the collection. Twin joysticks, a screen full of enemy waves, and a high score table that's been running since we opened.</p>
+      </article>
+
+      <article class="cab-card">
+        <div class="cab-number">02</div>
+        <h3>Neon Tank Corps</h3>
+        <p class="cab-tag">Combat / Maze · 1984</p>
+        <p class="cab-copy">Drive a tank through a wire-frame maze and outlast the other tanks. Two-player mode turns friends into rivals fast.</p>
+      </article>
+
+      <article class="cab-card">
+        <div class="cab-number">03</div>
+        <h3>Pixel Fury</h3>
+        <p class="cab-tag">Beat 'em Up · 1989</p>
+        <p class="cab-copy">Four-player brawler with a co-op mode that gets loud. Our most fought-over cabinet on tournament nights.</p>
+      </article>
+
+      <article class="cab-card">
+        <div class="cab-number">04</div>
+        <h3>Turbo Wedge GP</h3>
+        <p class="cab-tag">Racing · 1991</p>
+        <p class="cab-copy">Sit-down cabinet with a force-feedback wheel that still kicks. Hold the record here and your name stays lit for a month.</p>
+      </article>
+
+      <article class="cab-card">
+        <div class="cab-number">05</div>
+        <h3>Skyline Pinball</h3>
+        <p class="cab-tag">Pinball · 1986</p>
+        <p class="cab-copy">A city-themed table with three ramps and a multiball mode most people never reach. Ask staff for the trick to the left flipper.</p>
+      </article>
+
+      <article class="cab-card">
+        <div class="cab-number">06</div>
+        <h3>Void Runner</h3>
+        <p class="cab-tag">Vector Shooter · 1980</p>
+        <p class="cab-copy">Glowing vector graphics on a genuine XY monitor. Simple rules, brutal difficulty curve, and a cult following at the lounge.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- HIGH SCORES -->
+  <section id="scores" class="section section-alt">
+    <div class="section-head">
+      <h2>High scores</h2>
+      <p>Updated every Sunday night. Beat a name on this list and it's yours until someone takes it back.</p>
+    </div>
+
+    <div class="board-wrap">
+      <table class="scoreboard">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Player</th>
+            <th>Cabinet</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="rank">01</td>
+            <td>MAXINE R.</td>
+            <td>Galaxy Raiders</td>
+            <td class="score">1,284,500</td>
+          </tr>
+          <tr>
+            <td class="rank">02</td>
+            <td>DELROY K.</td>
+            <td>Void Runner</td>
+            <td class="score">998,150</td>
+          </tr>
+          <tr>
+            <td class="rank">03</td>
+            <td>SAM O.</td>
+            <td>Turbo Wedge GP</td>
+            <td class="score">2:04.311</td>
+          </tr>
+          <tr>
+            <td class="rank">04</td>
+            <td>PRIYA V.</td>
+            <td>Pixel Fury</td>
+            <td class="score">742,900</td>
+          </tr>
+          <tr>
+            <td class="rank">05</td>
+            <td>JONO T.</td>
+            <td>Neon Tank Corps</td>
+            <td class="score">610,050</td>
+          </tr>
+          <tr>
+            <td class="rank">06</td>
+            <td>ELISE B.</td>
+            <td>Skyline Pinball</td>
+            <td class="score">58,432,110</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- TOURNAMENTS -->
+  <section id="tournaments" class="section">
+    <div class="section-head">
+      <h2>Upcoming tournaments</h2>
+      <p>Entry includes free play on the tournament cabinet for the rest of the night. Sign up at the counter or on the night.</p>
+    </div>
+
+    <ul class="ticket-list">
+      <li class="ticket">
+        <div class="ticket-date"><span class="ticket-day">27</span><span class="ticket-month">Sep</span></div>
+        <div class="ticket-body">
+          <h3>Galaxy Raiders Open</h3>
+          <p>Single elimination, best of three. Sixteen slots, walk-ins welcome until the bracket fills.</p>
+        </div>
+        <div class="ticket-meta">
+          <span>7:00 PM</span>
+          <span>$10 entry</span>
+        </div>
+      </li>
+
+      <li class="ticket">
+        <div class="ticket-date"><span class="ticket-day">11</span><span class="ticket-month">Oct</span></div>
+        <div class="ticket-body">
+          <h3>Pixel Fury Team Brawl</h3>
+          <p>Two-player teams, round robin into finals. Bring a partner or get paired at the door.</p>
+        </div>
+        <div class="ticket-meta">
+          <span>6:30 PM</span>
+          <span>$15 per team</span>
+        </div>
+      </li>
+
+      <li class="ticket">
+        <div class="ticket-date"><span class="ticket-day">2</span><span class="ticket-month">Nov</span></div>
+        <div class="ticket-body">
+          <h3>Turbo Wedge GP Time Trial</h3>
+          <p>Three laps, fastest time wins. Spectators can watch the run live on the side screen.</p>
+        </div>
+        <div class="ticket-meta">
+          <span>7:30 PM</span>
+          <span>$10 entry</span>
+        </div>
+      </li>
+
+      <li class="ticket">
+        <div class="ticket-date"><span class="ticket-day">16</span><span class="ticket-month">Nov</span></div>
+        <div class="ticket-body">
+          <h3>All-Cabinet Championship</h3>
+          <p>Our biggest night. Points across five cabinets decide one overall champion and a plaque on the wall.</p>
+        </div>
+        <div class="ticket-meta">
+          <span>5:00 PM</span>
+          <span>$20 entry</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- VISIT -->
+  <section id="visit" class="section section-alt visit">
+    <div class="section-head">
+      <h2>Visit the lounge</h2>
+      <p>Walk-ins always welcome. Bring a group and grab a booth by the pinball wall.</p>
+    </div>
+    <div class="visit-grid">
+      <div class="visit-block">
+        <h3>Hours</h3>
+        <p>Tue – Thu: 4pm – 11pm<br>
+           Fri – Sat: 2pm – 1am<br>
+           Sun: 2pm – 9pm<br>
+           Closed Monday</p>
+      </div>
+      <div class="visit-block">
+        <h3>Address</h3>
+        <p>14 Arcade Lane<br>
+           Melbourne, VIC<br>
+           Street parking after 6pm</p>
+      </div>
+      <div class="visit-block">
+        <h3>Contact</h3>
+        <p>hello@crazyarcade.example<br>
+           (03) 5555 0142<br>
+           @crazyarcade</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Crazy Arcade. All high scores are earned, not emulated.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
